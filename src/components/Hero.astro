@@ -1,0 +1,90 @@
+
+ 
+ 
+ <section class="swiper mySwiper relative h-screen">
+    <div class="absolute z-50 bottom-0 top-0 w-full h-full 
+    bg-gradient-to-b from-transparent from-30% via-black/70 to-black ointer-events-none"></div>
+    <div class="absolute top-[35%] left-10 z-50 w-[90%] md:w-2/3 max-w-[800px] text-white flex flex-col justify-center gap-4 p-8">
+        <h1 class="text-5xl font-bold"><span class="text-3xl">Gabriel Osuna</span> <br/><strong>Especialista en Landing Page</strong></h1>
+        <p class="font-semibold">estas iniciando en el mundo digital llegaste al sitio indicado aqui crearemos tu sitio web que si logre convertir tus vicitantes en clientes.</p>
+       <a class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full text-center w-80" href="/">Quiero cotizar</a>
+    </div>
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+         <img src="/img/img1.webp" alt="imagen de gabriel osuna desarrollador web">
+      </div>
+      <div class="swiper-slide">
+        <img src="/img/img4.webp" alt="imagen de gabriel osuna desarrollador web">
+      </div>
+      <div class="swiper-slide">
+        <img src="/img/img3.webp" alt="imagen de gabriel osuna desarrollador web">
+      </div>
+      <div class="swiper-slide">
+        <img src="/img/img2.webp" alt="imagen de gabriel osuna desarrollador web">
+      </div>
+     
+    </div>
+    <div class="swiper-pagination"></div>
+
+    
+</section>
+<style>
+    
+    section {
+      position: relative;
+      height: 100vh;
+    }
+
+    section {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100vh;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+
+ 
+
+  <!-- Initialize Swiper -->
+  <script>
+     import 'swiper/css';
+    import Swiper from 'swiper';
+    import { register } from 'swiper/element/bundle';
+    register();
+
+    let swiper = new Swiper(".mySwiper", {
+       autoplay: {
+        delay: 2500,
+        disableOnInteraction: false}
+        ,
+
+      pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+        
+      },
+    });
+  </script>

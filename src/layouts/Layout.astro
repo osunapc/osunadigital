@@ -1,0 +1,38 @@
+---
+import Nav from '../components/Nav.astro'
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="description"
+			content="¿Necesitas una landing page que convierta? Soy tu desarrollador web. Especializado en JavaScript, React y Astro, creo diseños web modernos y efectivos que impulsan tus ventas. ¡Solicita un presupuesto ahora!
+			 Desarrollador web experto en creación de landing pages impactantes. Dominio de JavaScript, React, Astro, HTML, CSS y Tailwind. Aumenta tus conversiones con diseños personalizados y optimizados para SEO. ¡Contactame hoy!"
+		/>
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/img/1.png" />
+		
+		<title>{title}</title>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+	</head>
+	<body>
+		<Nav />
+		<slot />
+	</body>
+</html>
+<style is:global>
+	html {
+		font-family: system-ui, sans-serif;
+		background: #000008;
+	}
+</style>

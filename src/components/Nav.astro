@@ -1,0 +1,47 @@
+<!-- nav bar section -->
+<section class="relative px-6">
+	<nav
+		class="w-full flex flex-wrap items-center justify-between p-2 text-white fixed z-50 "
+	>
+		<div class="text-xl">OsunaDigital</div>
+		<div class="flex md:hidden">
+			<button id="hamburger">
+				<img
+					class="toggle block bg-slate-300 rounded-lg"
+					src="https://img.icons8.com/fluent-systems-regular/2x/menu-squared-2.png"
+					width="30"
+					height="30"
+				/>
+				<img
+					class="toggle hidden bg-slate-300 rounded-lg"
+					src="https://img.icons8.com/fluent-systems-regular/2x/close-window.png"
+					width="30"
+					height="30"
+				/>
+			</button>
+		</div>
+		<div
+			class="toggle hidden text-center absolute top-10 right-0 md:static w-1/2 md:w-auto md:flex md:text-right text-bold mt-5 md:mt-0 md:border-none bg-blue-800 md:bg-transparent animate-slide-in-right"
+		>
+			<a
+				href="/"
+				class="block md:inline-block hover:text-blue-500 px-3 py-3 md:border-none"
+				>Home
+			</a>
+			<a
+				href="/about"
+				class="block md:inline-block hover:text-blue-500 px-3 py-3 md:border-none"
+				>Sobre nosotros
+			</a>
+		</div>
+	</nav>
+</section>
+
+<script>
+	document.getElementById("hamburger").onclick = function toggleMenu() {
+		const navToggle = document.getElementsByClassName("toggle");
+		for (let i = 0; i < navToggle.length; i++) {
+			navToggle.item(i).classList.toggle("hidden");
+		}
+	};
+</script>
