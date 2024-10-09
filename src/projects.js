@@ -28,7 +28,7 @@ export const Projects = [
 		img: "/img/relinda.jpg",
 		logo: "/img/re-logo.jpg",
 		alt: "Relinda vnzla",
-		github: "hhttps://github.com/osunapc/relindavnzla",
+		github: "https://github.com/osunapc/relindavnzla",
 		link: "https://relindavnzla.netlify.app/",
 	},
 ]; 
