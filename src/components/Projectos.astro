@@ -3,7 +3,7 @@ import { Projects } from "../projects"
 ---
 
 <section class="py-10 " id="services">
-    <di class="container mx-auto px-4">
+    <div class="container mx-auto px-4">
         <h2 class="block w-full bg-gradient-to-b from-white to-gray-400 bg-clip-text font-bold text-transparent text-3xl sm:text-4xl md:text-5xl text-center mb-6">Ultimos Proyectos</h2>
         <p class="text-gray-500 text-center font-semibold mb-8">Optimización de conversiones, tasa de conversión, embudo de ventas, experiencia de usuario, diseño centrado en el usuario.</p>
         <div class="grid grid-cols-1 px-6 md:grid-cols-4 gap-4 group">
@@ -14,7 +14,7 @@ import { Projects } from "../projects"
                const { logo, img, alt, github, link } = project
                return (
                    <!-- special card -->
-                       <article
+                       <div
     class="max-w-2xl mx-4 sm:max-w-sm md:max-w-sm lg:max-w-sm xl:max-w-sm sm:mx-auto md:mx-auto lg:mx-auto xl:mx-auto mt-16 bg-white shadow-xl rounded-lg text-gray-900 group-hover:saturate-0 hover:scale-125  hover:!saturate-100">
     <div class="rounded-t-lg w-full h-32 overflow-hidden">
         <img class="object-cover object-top w-full" src={ img } alt={ alt }>
@@ -36,7 +36,7 @@ import { Projects } from "../projects"
             
         </li>
         <li class="flex flex-col items-center justify-between">
-           <a name="ir a proyecto" target="_blank" href={ link }>
+           <a target="_blank" href={ link }>
              <svg fill="#000000" height="40" width="40" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 463 463" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <g> <path d="M455.5,348H447V99.5c0-17.369-14.131-31.5-31.5-31.5h-368C30.131,68,16,82.131,16,99.5V348H7.5 c-4.142,0-7.5,3.358-7.5,7.5v16C0,384.458,10.542,395,23.5,395h416c12.958,0,23.5-10.542,23.5-23.5v-16 C463,351.358,459.642,348,455.5,348z M31,99.5C31,90.402,38.402,83,47.5,83h368c9.098,0,16.5,7.402,16.5,16.5V348H31V99.5z M448,371.5c0,4.687-3.813,8.5-8.5,8.5h-416c-4.687,0-8.5-3.813-8.5-8.5V363h169.025c-0.011,0.166-0.025,0.331-0.025,0.5 c0,4.142,3.358,7.5,7.5,7.5h80c4.142,0,7.5-3.358,7.5-7.5c0-0.169-0.014-0.334-0.025-0.5H448V371.5z"></path> <path d="M407.5,100h-352c-4.142,0-7.5,3.358-7.5,7.5v216c0,4.142,3.358,7.5,7.5,7.5h352c4.142,0,7.5-3.358,7.5-7.5v-216 C415,103.358,411.642,100,407.5,100z M400,316H63V115h337V316z"></path> </g> </g> </g> </g>
              </svg>
            </a>
@@ -45,11 +45,11 @@ import { Projects } from "../projects"
         
     </ul>
     
-</di>
+</div>
                )
              })
            }
         </div>
-    </article>
+    </div>
 </section>
 
