@@ -1,3 +1,7 @@
+---
+import { Image } from "astro:assets";
+---
+
 <section
 	class="px-2 py-10 bg-[#000008;] md:px-0 max-w-5xl flex justify-center items-center m-auto"
 >
@@ -10,7 +14,10 @@
 					<h1
 						class="text-4xl font-extrabold tracking-tight text-gray-600 sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl"
 					>
-						<span class="xl:inline block w-full bg-gradient-to-b from-white to-gray-400 bg-clip-text font-bold text-transparent text-3xl sm:text-4xl md:text-5xl">Conoce</span>
+						<span
+							class="xl:inline block w-full bg-gradient-to-b from-white to-gray-400 bg-clip-text font-bold text-transparent text-3xl sm:text-4xl md:text-5xl"
+							>Conoce</span
+						>
 						<span class="block text-blue-700 xl:inline">Osuna digital</span>
 					</h1>
 
@@ -24,7 +31,8 @@
 						crear una identidad visual sólida que complemente tu landing page.
 					</p>
 					<div class="relative flex flex-col sm:flex-row sm:space-x-4">
-						<a  target="_blank"
+						<a
+							target="_blank"
 							href="https://wa.link/14jxvh"
 							class="flex items-center w-full px-6 py-3 mb-3 text-lg text-white bg-blue-800 rounded-md sm:mb-0 hover:bg-blue-700 sm:w-auto transition duration-200 ease-in-out transform hover:scale-105 animate-pulse drop-shadow-xl"
 						>
@@ -42,7 +50,6 @@
 									points="12 5 19 12 12 19"></polyline></svg
 							>
 						</a>
-						
 					</div>
 				</div>
 			</div>
@@ -50,7 +57,12 @@
 				<div
 					class="w-full h-auto overflow-hidden rounded-md shadow-xl sm:rounded-xl"
 				>
-					<img src="/img/1.webp" alt="logo de  osunadigital" width="512" height="512" />
+					<Image
+						src="/img/1.webp"
+						alt="logo de  osunadigital"
+						width="512"
+						height="512"
+					/>
 				</div>
 			</div>
 		</div>
