@@ -14,7 +14,7 @@ import { Projects } from "../projects"
                const { logo, img, alt, github, link } = project
                return (
                    <!-- special card -->
-                       <div
+                       <article
     class="max-w-2xl mx-4 sm:max-w-sm md:max-w-sm lg:max-w-sm xl:max-w-sm sm:mx-auto md:mx-auto lg:mx-auto xl:mx-auto mt-16 bg-white shadow-xl rounded-lg text-gray-900 group-hover:saturate-0 hover:scale-125  hover:!saturate-100">
     <div class="rounded-t-lg w-full h-32 overflow-hidden">
         <img class="object-cover object-top w-full" src={ img } alt={ alt }>
@@ -45,7 +45,7 @@ import { Projects } from "../projects"
         
     </ul>
     
-</div>
+                       </article>
                )
              })
            }
