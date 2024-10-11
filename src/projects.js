@@ -1,7 +1,7 @@
 export const Projects = [
 	{
 		id: 1,
-		img: "/img/mtl.jpg",
+		img: "/img/mtl.avif",
 		logo: "/img/mtl-logo.avif",
 		alt: "Multlock ve",
 		github: "https://github.com/osunapc/multlockve",
